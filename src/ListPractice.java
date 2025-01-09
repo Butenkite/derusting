@@ -14,9 +14,9 @@ public class ListPractice {
     System.out.println(list.get(1));
     // Replace the element at index 1 with a new value
     // (Do not insert a new value. The length of the list should not change)
-
+    list.add(1,"D");
     // Insert a new element at index 0 (the length of the list will change)
-
+    list.add("E");
     // Check whether the list contains a certain string
 
     // Iterate over the list using a traditional for-loop.
