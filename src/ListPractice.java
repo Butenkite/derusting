@@ -1,4 +1,4 @@
-import java.util.ArrayList; // needs to be imported to run
+import java.util.*; // needs to be imported to run, don't know the specifics for collections, so importing utils.
 
 public class ListPractice {
 
@@ -14,19 +14,24 @@ public class ListPractice {
     System.out.println(list.get(1));
     // Replace the element at index 1 with a new value
     // (Do not insert a new value. The length of the list should not change)
-    list.add(1,"D");
+    list.set(1,"D");
     // Insert a new element at index 0 (the length of the list will change)
-    list.add("E");
+    list.add(0, "E");
     // Check whether the list contains a certain string
-
+    System.out.println("Contains E?: " + list.contains("E"));
     // Iterate over the list using a traditional for-loop.
     // Print each index and value on a separate line
-
+    for(int i = 0; i < list.size(); i++){
+      System.out.println("Index: " + i + ". Value: " + list.get(i));
+    }
     // Sort the list using the Collections library
-
+    Collections.sort(list);
     // Iterate over the list using a for-each loop
     // Print each value on a second line
-
+    for(String listLetter : list){
+      
+      System.out.println("Value: " + listLetter);
+    }
     /*
      * Usage tip!
      * 
