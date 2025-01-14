@@ -60,7 +60,7 @@ public class Person {
     // and store it in a local variable. Input the actual current year (e.g. 2025)
     // as the argument.
     int jimBirthYear = jim.birthYear(2025);
-        System.out.println(jimBirthYear);
+    System.out.println(jimBirthYear);
     // In a separate statement, print the local variable holding the birth year.
     /**
      * Terminology!
